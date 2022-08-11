@@ -1,0 +1,39 @@
+<template>
+	<div class="slds-card">
+		<h1 id="Titulo"> Calculadora Financiamento</h1>
+
+	<div>
+		<lightning-input type="Number" label="Valor de entrada" onchange={entrada}></lightning-input>
+			
+		<lightning-input type="Number" label="Valor financiado" onchange={valortotal}></lightning-input>
+			
+		<lightning-input type="Number" label="parcelas" onchange={parcelas}></lightning-input>
+		
+		<lightning-button variant="brand" label="calcular " onclick={calcular} class="slds-m-left_x-small"></lightning-button>
+		
+		</div>
+	  
+		<br></br>
+		
+		<div>
+
+		<br></br>
+		<h6 id="resultado1"> O valor total financiado (total-entrada) é:  </h6>
+		<p><lightning-formatted-number value={resultado1}  format-style="currency" currency-code="BRL"> </lightning-formatted-number></p>
+		
+		<br></br>
+		<h6 id="resultado2"> O valor dos juros é : </h6>
+		<p><lightning-formatted-number value={resultado2}  format-style="currency" currency-code="BRL"> </lightning-formatted-number></p>
+		
+		<br></br>
+		<h6 id="resultado3"> O valor da parcela é : </h6>
+		<p><lightning-formatted-number value={resultado3}  format-style="currency" currency-code="BRL">  </lightning-formatted-number></p>
+		
+		</div>
+
+	
+
+
+
+	</div>
+</template>
