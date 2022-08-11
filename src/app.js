@@ -33,5 +33,12 @@ calcular(){
   this.resultado3= (this.resultado1 + this.resultado2)/this.parcelasdofinanciamento;
   
     }
+
+limpa (){
+  this.resultado1='';
+  this.resultado2='';
+  this.resultado3='';
+
+}
 }
 
